@@ -1,0 +1,21 @@
+drupaltests.mypage:
+  path: /mypage/{a}/{b}
+  defaults:
+    _controller: Drupal\drupaltests\Controller\MyController::content
+  requirements:
+    _permission: 'access content'
+
+drupaltests.myarticleform:
+  path: /nodeForm
+  defaults:
+    _controller: Drupal\drupaltests\Controller\MyController::nodeForm
+  requirements:
+    _permission: 'access content'
+
+drupaltests.myform:
+  path: /test/myform
+  defaults:
+    _form: Drupal\drupaltests\Form\MyCustomForm
+    _title: My Form
+  requirements:
+    _permission: "access content"

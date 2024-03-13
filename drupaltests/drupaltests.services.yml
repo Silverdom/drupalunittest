@@ -1,0 +1,3 @@
+services:
+  drupaltests.handtocount:
+    class: Drupal\drupaltests\MyService
